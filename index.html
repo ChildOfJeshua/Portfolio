@@ -121,38 +121,96 @@ body {
     color: #003d82;
 }
 
+/* --- MOBILE STYLES (768px AND BELOW) --- */
 @media (max-width: 768px) {
+    
     .resume-section {
-        padding: 2rem 1.5rem;
+        padding: 20px 15px;
+        width: 100%;
+        box-sizing: border-box;
     }
 
     .section-title {
-        font-size: 1.5rem;
-        margin-bottom: 1.5rem;
+        font-size: 1.8rem;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    .resume-section h4 {
+        font-size: 0.95rem;
+        line-height: 1.5;
+        padding: 15px;
+        text-align: center;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .project-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        margin-top: 20px;
     }
 
     .project-card {
+        padding: 20px;
+        margin-bottom: 10px;
         width: 100%;
-        padding: 1.25rem;
+        box-sizing: border-box;
+        border-radius: 8px;
     }
 
     .project-header {
         flex-direction: column;
         align-items: flex-start;
-        gap: 0.25rem;
+        margin-bottom: 15px;
     }
 
     .project-name {
-        font-size: 1.2rem;
+        font-size: 1.4rem;
+        margin-bottom: 5px;
+    }
+
+    .project-meta {
+        font-size: 0.9rem;
+        opacity: 0.8;
+        margin-bottom: 10px;
+    }
+
+    .project-description {
+        font-size: 1rem;
+        line-height: 1.5;
+        margin-bottom: 15px;
+    }
+
+    .project-tags {
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-bottom: 20px;
+    }
+
+    .tag {
+        font-size: 0.85rem;
+        padding: 5px 10px;
     }
 
     .project-links {
+        display: flex;
         flex-direction: column;
-        gap: 0.5rem;
+        gap: 12px;
     }
 
     .link-item {
-        width: fit-content;
+        display: block;
+        text-align: center;
+        padding: 12px 0;
+        font-size: 1rem;
+        border-bottom: 1px solid rgba(0, 86, 179, 0.1);
+        width: 100%;
+    }
+
+    .link-item:last-child {
+        border-bottom: none;
     }
 }
     </style>
@@ -169,10 +227,10 @@ body {
             <article class="project-card">
                 <div class="project-header">
                     <h3 class="project-name">Graphic Design & Illustration</h3>
-                    <span class="project-meta">Coming Soon: 2027</span>
+                    <span class="project-meta">2025-current</span>
                 </div>
                 <p class="project-description">
-                    AZArtDesigns.com (2027) is a personal website of mine whereby I present a portfolio of graphic design/illustration projects. The motivation behind the website is the verse of 'Pray More & Worry Less'-Philippians 4:6 KJV. 
+               Projects range from my personal website to digital assets in categories such as graphic design and creative writing. Inspired by Philippians 4:6 KJV ('Pray More & Worry Less'), these works turn imagination into reality.
                 </p>
                 <div class="project-tags">
                     <span class="tag">Characters</span>

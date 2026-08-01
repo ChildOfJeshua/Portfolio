@@ -143,12 +143,25 @@ body {
         border-bottom: 1px solid #333333;
     }
 	
+    /* 2. Info Line (Name/Email/Github) Stacking */
     .resume-section h4 {
         font-size: 0.85rem;
         line-height: 1.6;
-        text-align: left; /* Left aligned */
+        text-align: left;
         padding: 0;
-        margin: 0 0 15px 0; /* Add spacing below */
+        margin: 0 0 15px 0;
+        
+        /* Minimal addition to force stacking */
+        display: flex;
+        flex-direction: column;
+        gap: 0.4rem; /* Space between Name, Email, Github */
+    }
+
+    /* Force the inner elements to be full-width blocks */
+    .resume-section h4 span,
+    .resume-section h4 a {
+        display: block;
+        width: 100%;
     }
 	
     /* 3. Project Grid Stack */

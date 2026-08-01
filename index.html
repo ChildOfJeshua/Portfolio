@@ -143,13 +143,18 @@ body {
         border-bottom: 1px solid #333333;
     }
 
-    /* 2. Info Line (Name/Email/Github) Stacking */
     .resume-section h4 {
         font-size: 0.9rem;
         line-height: 1.6;
         text-align: center;
-        flex-wrap: wrap;
+        
+        /* Force vertical stacking */
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem; /* Space between lines */
+        
         padding: 0.5rem 0;
+        width: 100%;
     }
 
     /* 3. Project Grid Stack */

@@ -142,19 +142,28 @@ body {
         padding-bottom: 0.5rem;
         border-bottom: 1px solid #333333;
     }
-
+    /* 2. Info Line (Name/Email/Github) Single Row Span */
     .resume-section h4 {
-        font-size: 0.9rem;
-        line-height: 1.6;
+        font-size: 0.75rem; /* Shrunk to fit 3 items */
+        line-height: 1.4;
         text-align: center;
         
-        /* Force vertical stacking */
+        /* Force horizontal row */
         display: flex;
-        flex-direction: column;
-        gap: 0.5rem; /* Space between lines */
+        flex-direction: row;
+        justify-content: center; /* Centers the group */
+        align-items: center;
+        flex-wrap: wrap; /* Allows wrapping if screen is VERY small */
+        gap: 0.5rem; /* Space between items */
         
         padding: 0.5rem 0;
         width: 100%;
+    }
+
+    /* Ensure links don't wrap individually and stay tight */
+    .resume-section h4 a, 
+    .resume-section h4 span {
+        white-space: nowrap; /* Prevents text inside an item from breaking */
     }
 
     /* 3. Project Grid Stack */

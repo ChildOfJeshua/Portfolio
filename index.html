@@ -145,21 +145,18 @@ body {
 	
     /* 2. Info Line (Name/Email/Github) Stacking */
     .resume-section h4 {
-        font-size: 1.5rem;
+        font-size: 0.85rem;
         line-height: 1.6;
         text-align: left;
         padding: 0;
         margin: 0 0 15px 0;
-        
-        /* Minimal addition to force stacking */
         display: flex;
         flex-direction: column;
-        gap: 0.4rem; /* Space between Name, Email, Github */
+        gap: 0.5rem;
     }
 
-    /* Force the inner elements to be full-width blocks */
-    .resume-section h4 span,
-    .resume-section h4 a {
+    /* Force each main span to be a full line */
+    .resume-section h4 > span {
         display: block;
         width: 100%;
     }

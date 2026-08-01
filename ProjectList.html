@@ -155,10 +155,12 @@ body {
         gap: 0.5rem;
     }
 
-    /* Force each main span to be a full line */
-    .resume-section h4 > span {
+    /* MINIMAL ADDITION: Force inner elements to be full-width blocks */
+    .resume-section h4 span,
+    .resume-section h4 a {
         display: block;
         width: 100%;
+        text-align: center; /* Ensures links are centered even if text-align on h4 is overridden */
     }
 	
     /* 3. Project Grid Stack */

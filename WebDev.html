@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Web Development Projects</title>
+	<!--Favicon or image next to the Tab tag name-->
+	<link rel="icon" href="images/code-svgrepo-com.svg" type="image/svg+xml">
+    <style>
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Georgia', 'Times New Roman', Times, serif;    background-color: #ffffff;
+    color: #333333;
+    line-height: 1.6;
+    padding: 3rem 1rem;
+}
+
+/* Main Container */
+.resume-section {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 2.5rem;
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+}
+
+.section-title {
+    font-size: 1.75rem;
+    color: #1a1a1a;
+    margin-bottom: 2rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 2px solid #333333;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
+.project-grid {
+    display: grid;
+    gap: 2rem;
+}
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    border: 1px solid #dddddd;
+    border-radius: 6px;
+    background-color: #fafafa;
+}
+
+.project-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 0.75rem;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.project-name {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #222222;
+}
+
+.project-meta {
+    font-size: 0.85rem;
+    color: #666666;
+    font-weight: 600;
+}
+
+.project-description {
+    font-size: 1rem;
+    color: #444444;
+    margin-bottom: 1.25rem;
+}
+
+.project-tags {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1.25rem;
+    flex-wrap: wrap;
+}
+
+.tag {
+    background-color: #e9ecef;
+    color: #495057;
+    padding: 0.25rem 0.75rem;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    border: 1px solid #dee2e6;
+}
+
+.project-links {
+    margin-top: auto;
+    border-top: 1px solid #e0e0e0;
+    padding-top: 1rem;
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.link-item {
+    text-decoration: none;
+    color: #0056b3;
+    font-weight: 600;
+    font-size: 0.95rem;
+    display: inline-flex;
+    align-items: center;
+}
+
+.link-item:hover {
+    text-decoration: underline;
+    color: #003d82;
+}
+
+/* --- MOBILE STYLES (768px AND BELOW) --- */
+@media (max-width: 768px) {
+    
+    /* --- LAYOUT ADJUSTMENTS --- */
+    body {
+        padding: 1rem;
+    }
+
+    .resume-section {
+        padding: 1.25rem;
+        width: 100%;
+    }
+
+    /* 1. Section Title Centering */
+    .section-title {
+        font-size: 1.5rem;
+        text-align: center;
+        margin-bottom: 1.5rem;
+        padding-bottom: 0.5rem;
+        border-bottom: 1px solid #333333;
+    }
+	
+    /* 2. Info Line (Name/Email/Github) Stacking */
+    .resume-section h4 {
+        font-size: 1rem;
+        line-height: 1.6;
+        text-align: center;
+        padding: 0;
+        margin: 0 0 15px 0;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    /* MINIMAL ADDITION: Force inner elements to be full-width blocks */
+    .resume-section h4 span,
+    .resume-section h4 a {
+        display: block;
+        width: 100%;
+        text-align: center; /* Ensures links are centered even if text-align on h4 is overridden */
+    }
+	
+    /* 3. Project Grid Stack */
+    .project-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    /* 4. Project Card Styling */
+    .project-card {
+        padding: 1.25rem;
+    }
+
+    .project-header {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 0.5rem;
+    }
+
+    .project-name {
+        font-size: 1.2rem;
+        margin-bottom: 0.25rem;
+    }
+
+    .project-meta {
+        font-size: 0.8rem;
+    }
+
+    .project-description {
+        font-size: 0.95rem;
+        margin-bottom: 1rem;
+    }
+
+    /* 5. Tags Wrapping */
+    .project-tags {
+        gap: 0.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .tag {
+        font-size: 0.7rem;
+        padding: 0.2rem 0.6rem;
+    }
+
+    /* 6. Links Stack for Tapping */
+    .project-links {
+        flex-direction: column;
+        gap: 0.75rem;
+        padding-top: 0.75rem;
+    }
+
+    .link-item {
+        font-size: 0.9rem;
+        padding: 0.25rem 0;
+    }
+}
+    </style>
+</head>
+<body>
+
+    <section class="resume-section">
+        <h2 class="section-title"> Software Development Projects </h2>
+        <h2 class> <a href="index.html" style="color: #0056b3; text-decoration: none;">Go Back</a> </h2>
+	<br>
+        
+        <div class="project-grid">
+            
+            <!-- Project 2 -->
+            <article class="project-card">
+                <div class="project-header">
+                    <h3 class="project-name">AES Literacy Institute</h3>
+                    <span class="project-meta"> Web Development Project | 2025-2026</span>
+                </div>
+                <p class="project-description">
+                    Webpage drafted variations for the AES Literacy Institute (ALI) nonprofit organization based in Dallas, Texas. Their mission is to empower underprivileged adults and youth by providing access to education, career training, and financial literacy. 
+                </p>
+                <div class="project-tags">
+                    <span class="tag">HTML</span>
+                    <span class="tag">CSS</span>
+                    <span class="tag">JavaScript</span>
+
+                </div>
+                <div class="project-links">
+		    		<a href="https://childofjeshua.github.io/AES/index.html" class="link-item" target="_blank" rel="noopener noreferrer"> AES_VersionOne </a>
+                    <a href="https://childofjeshua.github.io/AES_VariationTwo/index.html" class="link-item" target="_blank" rel="noopener noreferrer"> AES_VersionTwo </a>
+                    <a href="https://childofjeshua.github.io/AES_VariationThree/index.html" class="link-item" target="_blank" rel="noopener noreferrer"> AES_VersionThree </a>
+                    <a href="https://childofjeshua.github.io/AES_VariationFour/index.html" class="link-item" target="_blank" rel="noopener noreferrer"> AES_VersionFour </a>
+                    <a href="https://childofjeshua.github.io/AES_VariationFive/index.html" class="link-item" target="_blank" rel="noopener noreferrer"> AES_VersionFive </a>
+                    <a href="https://childofjeshua.github.io/AES_VariationSix/index.html" class="link-item" target="_blank" rel="noopener noreferrer"> AES_VersionSix </a>
+                    <a href="https://childofjeshua.github.io/AES_VariationSeven/index.html" class="link-item" target="_blank" rel="noopener noreferrer"> AES_VersionSeven </a>
+
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+</body>
+</html>
